@@ -26,7 +26,7 @@ cc.Class({
         var editname = this.node.getChildByName("editname");
         var editpwd = this.node.getChildByName("editpwd");
         
-        if(editname.string ===""||editpwd.string === ""){
+        if(editname.String ==="请输入账号"||editpwd.String === "请输入密码"){
             var error = cc.instantiate(this.errorPrefab);
             this.node.addChild(error);
             error.setPosition = cc.p(0,0);
